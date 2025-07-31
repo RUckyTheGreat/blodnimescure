@@ -15,18 +15,500 @@
     <link rel="stylesheet" href="lib/OwlCarousel2 v2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/OwlCarousel2 v2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="lib/Animate On Scroll v2.3.2/dist/aos.css">
+    <link rel="stylesheet" href="lib/Fancybox v5.0.36/dist/fancybox.css">
 
 </head>
 <body>
 
+    <div class="background-image"></div>
 
+    
+    <div class="preloader" id="preloader">
+      <div class="terminal-preloader">
+        <div class="border-top">
+          <span>Loading the BlogNimeHack Website. Please wait</span>
+          <span>BlogNimeHackウェブサイトを読み込んでいます
+          </span>
+        </div>
+    
+        <div class="terminal-container">
+          <!-- First block of text - before progress bar -->
+          <div class="terminal-line" style="top: 0px;">
+            <span class="faded" data-scramble="true">Loading systems: True/False/エラー </span>
+            <span class="highlight" data-scramble="true">System スクセース
+            </span>
+          </div>
+    
+          <div class="terminal-line" style="top: 30px;">
+            <span class="faded" data-scramble="true">Initiate oprational system</span>
+            <span class="highlight" data-scramble="true">oprational デテクティド</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 60px;">
+            <span class="highlight" data-scramble="true">Searching for 何か</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 90px;">
+            <span class="highlight" data-scramble="true">Waiting for code</span>
+          </div>
+    
+          <!-- Progress bar with additional text -->
+          <div class="progress-line">
+            <span class="progress-label">Print アニメ</span>
+            <div class="progress-container">
+              <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <span class="highlight" style="margin-left: 10px;" data-scramble="true">Hello Everyone</span>
+          </div>
+    
+          <!-- Second block of text - after progress bar -->
+          <div class="terminal-line" style="top: 165px;">
+            <span class="highlight" data-scramble="true">Did u guys print 猫 ?</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 195px;">
+            <span class="highlight" data-scramble="true">User: admin123</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 225px;">
+            <span class="highlight" data-scramble="true">user 英語 confrimed</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 255px;">
+            <span class="highlight" data-scramble="true">if 二 True then 0 </span>
+          </div>
+    
+          <div class="terminal-line" style="top: 285px;">
+            <span class="highlight" data-scramble="true">Print こんにちわ from 私 </span>
+          </div>
+    
+          <!-- Background faded lines -->
+          <div class="terminal-line" style="top: 15px;">
+            <span class="faded" data-scramble="true">Loading for binary</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 45px;">
+            <span class="faded" data-scramble="true">Initiating user 日本 and password</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 75px;">
+            <span class="faded" data-scramble="true">Scanning world</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 105px;">
+            <span class="faded" data-scramble="true">Analyzing Device</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 180px;">
+            <span class="faded" data-scramble="true">見る
+              for html</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 210px;">
+            <span class="faded" data-scramble="true">Css is not lang</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 240px;">
+            <span class="faded" data-scramble="true">Evaluating all system done</span>
+          </div>
+    
+          <div class="terminal-line" style="top: 270px;">
+            <span class="faded" data-scramble="true">Stabilizing Render</span>
+          </div>
+        </div>
+    
+        <div class="border-bottom">
+          <span> 日本 System Complete</span>
+          <span>Open 英語 word</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="content-container" id="content">
+      <header class="site-header">
+        <nav class="primary-nav">
+          <div class="grid">
+            <div class="brand">
+              <div class="text-reveal">
+                <a href="#">BlogNimeHack</a>
+              </div>
+            </div>
+            <div class="menu-toggle">
+              <div class="text-reveal">
+                <p id="menu-btn">Menu</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="overlay" id="overlay">
+          <div class="featured-image" id="featured-image"></div>
+          <div class="overlay-header">
+            <div class="grid">
+              <div class="overlay-brand">
+                <div class="text-reveal">
+                  <a href="#">BlogNimeHack</a>
+                </div>
+              </div>
+              <div class="close-toggle">
+                <div class="text-reveal">
+                  <p id="close-btn">Close</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="nav-menu">
+            <div class="nav-menu-inner">
+              <div class="nav-item">
+                <div class="text-reveal">
+                  <a href="#home" class="nav-link shift-effect">Home Page</a>
+                </div>
+              </div>
+              <div class="nav-item">
+                <div class="text-reveal">
+                  <a href="#artikel" class="nav-link shift-effect">Artikel Page</a>
+                </div>
+              </div>
+              <div class="nav-item">
+                <div class="text-reveal">
+                  <a href="#profile" class="nav-link shift-effect">My Profile</a>
+                </div>
+              </div>
+              <div class="nav-item">
+                <div class="text-reveal">
+                  <a href="#about" class="nav-link shift-effect">About The Website</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <footer class="overlay-footer">
+            <div class="grid">
+              <div class="copyright">
+                <div class="text-reveal">
+                  <p>&copy; BlogNimeHack 2025</p>
+                </div>
+              </div>
+              <div class="social-links">
+                <div class="text-reveal">
+                  <a href="#">VSCO</a>
+                </div>
+                <div class="text-reveal">
+                  <a href="#">Instagram</a>
+                </div>
+                <div class="text-reveal">
+                  <a href="#">X</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </header>
+
+      <!-- Interactive Text Animation Banner -->
+      <section class="interactive-banner" id="interactive-banner">
+        <div class="banner-background">
+          <div class="background-frame"></div>
+          <div class="background-image default" id="default-bg"></div>
+          <div class="background-image focus" id="focus-bg"></div>
+          <div class="background-image presence" id="presence-bg"></div>
+          <div class="background-image feel" id="feel-bg"></div>
+          <div class="bottom-gradient"></div>
+        </div>
+
+        <div class="text-background">
+          <div class="text-item" style="top: 5%; left: 8%;" data-text="LETS">LETS</div>
+          <div class="text-item" style="top: 5%; left: 15%;" data-text="SHARE">SHARE</div>
+          <div class="text-item" style="top: 5%; left: 28%;" data-text="TALK">TALK</div>
+          <div class="text-item" style="top: 5%; left: 42%;" data-text="君のこと
+          ">君のこと
+          </div>
+          <div class="text-item" style="top: 5%; left: 55%;" data-text="HACKING">HACKING</div>
+          <div class="text-item" style="top: 5%; left: 75%;" data-text="&">&</div>
+          <div class="text-item" style="top: 5%; left: 85%;" data-text="SECURITY">SECURITY</div>
+
+          <div class="text-item" style="top: 10%; left: 12%;" data-text="MAKE">CREATE</div>
+          <div class="text-item" style="top: 10%; left: 45%;" data-text="BETTER">BETTER</div>
+          <div class="text-item" style="top: 10%; right: 20%;" data-text="もっと見る
+          ">もっと見る
+        </div>
+
+          <div class="text-item" style="top: 15%; left: 8%;" data-text="THE">PROGRAM</div>
+          <div class="text-item" style="top: 15%; left: 30%;" data-text="CREATIVE">INPUT</div>
+          <div class="text-item" style="top: 15%; left: 55%;" data-text="PROCESS">PROCESS</div>
+          <div class="text-item" style="top: 15%; right: 20%;" data-text="IS">PRINT</div>
+          <div class="text-item" style="top: 15%; right: 5%;" data-text="DATABASE">DATABASE</div>
+
+          <div class="text-item" style="top: 25%; left: 5%;" data-text="S">S</div>
+          <div class="text-item" style="top: 25%; left: 10%;" data-text="E">E</div>
+          <div class="text-item" style="top: 25%; left: 15%;" data-text="C">C</div>
+          <div class="text-item" style="top: 25%; left: 20%;" data-text="U">U</div>
+          <div class="text-item" style="top: 25%; left: 25%;" data-text="R">R</div>
+          <div class="text-item" style="top: 25%; left: 30%;" data-text="I">I</div>
+          <div class="text-item" style="top: 25%; left: 35%;" data-text="T">T</div>
+          <div class="text-item" style="top: 25%; left: 40%;" data-text="I">I</div>
+          <div class="text-item" style="top: 25%; left: 45%;" data-text="Y">Y</div>
+          <div class="text-item" style="top: 25%; left: 50%;" data-text="!">!</div>
+          <div class="text-item" style="top: 25%; right: 5%;" data-text="IS IMPORTANT">IS IMPORTANT</div>
+
+          <div class="text-item" style="top: 35%; left: 25%;" data-text="LETS SOLVE">LETS SOLVE</div>
+          <div class="text-item" style="top: 35%; left: 65%;" data-text="YOUR PROBLEM">YOUR PROBLEM</div>
+
+          <div class="text-item" style="top: 50%; left: 5%;" data-text="ASK ANSWER">ASK ANSWER</div>
+          <div class="text-item" style="top: 50%; right: 5%;" data-text="HAVING FUN">HAVING FUN</div>
+
+          <div class="text-item" style="top: 75%; left: 20%;" data-text="WITH ANIMESTYLE">WITH ANIMESTYLE</div>
+          <div class="text-item" style="top: 75%; right: 20%;" data-text="こんにちわ世界">こんにちわ世界</div>
+
+          <div class="text-item" style="top: 80%; left: 10%;" data-text="あなた">あなた</div>
+          <div class="text-item" style="top: 80%; left: 35%;" data-text="考える">考える</div>
+          <div class="text-item" style="top: 80%; left: 65%;" data-text="ENCRYPT">ENCRYPT</div>
+          <div class="text-item" style="top: 80%; right: 10%;" data-text="BINER">BINER</div>
+
+          <div class="text-item" style="top: 85%; left: 25%;" data-text="DO">DO</div>
+          <div class="text-item" style="top: 85%; right: 25%;" data-text="話しましょう
+          ">話しましょう
+        </div>
+        </div>
+
+                  <div class="banner-content">
+            <div class="main-content">
+              <div class="sliced-container">
+                <div class="text-row" data-row-id="BLOGSITE">
+                  <div class="text-content" data-text="BLOGSITE">BLOG</div>
+                  <div class="interactive-area"></div>
+                </div>
+
+                <div class="text-row" data-row-id="アニメ">
+                  <div class="text-content" data-text="アニメ">NIME</div>
+                  <div class="interactive-area"></div>
+                </div>
+
+                <div class="text-row" data-row-id="HACKING">
+                  <div class="text-content" data-text="HACKING">HACK</div>
+                  <div class="interactive-area"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Gallery Section -->
+            <div class="interactive-gallery">
+              <div class="gallery-trigger" data-fancybox="gallery" data-src="#gallery-modal">
+                <div class="trigger-content">
+                  <i class='bx bx-images'></i>
+                  <span>Explore Blog</span>
+                </div>
+              </div>
+              
+              <!-- Hidden Gallery Modal -->
+              <div id="gallery-modal" style="display: none;">
+                <div class="gallery-modal-content">
+                  <div class="swiper gallery-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="gallery-item">
+                          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800" alt="Creative Process">
+                          <div class="item-overlay">
+                            <h3>Creative Process</h3>
+                            <p>Exploring the depths of imagination</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery-item">
+                          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Digital Innovation">
+                          <div class="item-overlay">
+                            <h3>Digital Innovation</h3>
+                            <p>Pushing boundaries of technology</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery-item">
+                          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Artistic Vision">
+                          <div class="item-overlay">
+                            <h3>Artistic Vision</h3>
+                            <p>Where art meets technology</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery-item">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" alt="Future Design">
+                          <div class="item-overlay">
+                            <h3>Future Design</h3>
+                            <p>Shaping tomorrow's experiences</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Buttons -->
+            <div class="interactive-buttons">
+              <button class="interactive-btn" data-action="play-music">
+                <i class='bx '></i>
+                <span>About The Website</span>
+              </button>
+              <button class="interactive-btn" data-action="show-particles">
+                <i class='bx bx-sparkles'></i>
+                <span>Guide</span>
+              </button>
+              <button class="interactive-btn" data-action="change-theme">
+                <i class='bx '></i>
+                <span>Feature</span>
+              </button>
+            </div>
+
+
+        </div>
+
+        <div class="type" id="kinetic-type" aria-hidden="true">
+          <div class="type-line odd">focus focus focus</div>
+          <div class="type-line even">presence presence presence</div>
+          <div class="type-line odd">feel feel feel</div>
+          <div class="type-line even">focus focus focus</div>
+          <div class="type-line odd">presence presence presence</div>
+          <div class="type-line even">focus focus focus</div>
+          <div class="type-line odd">focus focus focus</div>
+          <div class="type-line even">presence presence presence</div>
+          <div class="type-line odd">feel feel feel</div>
+          <div class="type-line even">focus focus focus</div>
+          <div class="type-line odd">presence presence presence</div>
+          <div class="type-line even">focus focus focus</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Next Section/Page -->
+    <section class="next-section" id="next-section">
+      <div class="section-background">
+        <div class="bg-pattern"></div>
+        <div class="bg-overlay"></div>
+      </div>
+      
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-word">Welcome</span>
+            <span class="title-word">to</span>
+            <span class="title-word">BlogNimeHack</span>
+          </h2>
+          <p class="section-subtitle">Exploring the intersection of creativity and technology</p>
+        </div>
+
+        <div class="content-grid">
+          <div class="content-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">
+              <i class='bx bx-code-alt'></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Modern web solutions with cutting-edge technologies and responsive design principles.</p>
+            <div class="card-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">GSAP</span>
+            </div>
+          </div>
+
+          <div class="content-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">
+              <i class='bx bx-palette'></i>
+            </div>
+            <h3>Creative Design</h3>
+            <p>Innovative design solutions that blend aesthetics with functionality and user experience.</p>
+            <div class="card-tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Animation</span>
+              <span class="tag">Branding</span>
+            </div>
+          </div>
+
+          <div class="content-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon">
+              <i class='bx bx-shield-check'></i>
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>Protecting digital assets with advanced security protocols and ethical hacking practices.</p>
+            <div class="card-tags">
+              <span class="tag">Penetration Testing</span>
+              <span class="tag">Security Audit</span>
+              <span class="tag">Incident Response</span>
+            </div>
+          </div>
+
+          <div class="content-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-icon">
+              <i class='bx bx-brain'></i>
+            </div>
+            <h3>AI & Machine Learning</h3>
+            <p>Leveraging artificial intelligence to create intelligent solutions and automation systems.</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-section" data-aos="fade-up" data-aos-delay="500">
+          <div class="cta-content">
+            <h3>Ready to Start Your Project?</h3>
+            <p>Let's collaborate to bring your ideas to life with innovative technology solutions.</p>
+            <div class="cta-buttons">
+              <button class="btn btn-primary" onclick="scrollToContact()">
+                <span>Get Started</span>
+                <i class='bx bx-right-arrow-alt'></i>
+              </button>
+              <button class="btn btn-secondary" onclick="viewPortfolio()">
+                <span>View Portfolio</span>
+                <i class='bx bx-images'></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-section" data-aos="fade-up" data-aos-delay="600">
+          <div class="stat-item">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="24">0</div>
+            <div class="stat-label">Hours Support</div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
 
     <script src="lib/jquery v3.7.1/jquery-3.7.1.min.js"></script>
     <script src="lib/gsap/minified/gsap.min.js"></script>
+    <script src="lib/gsap/minified/TextPlugin.min.js"></script>
+    <script src="lib/gsap/minified/SplitText.min.js"></script>
+    <script src="lib/gsap/minified/ScrambleTextPlugin.min.js"></script>
+    <script src="lib/gsap/minified/CustomEase.min.js"></script>
     <script src="lib/swiperjs v11.1.5/swiper-bundle.min.js"></script>
     <script src="lib/OwlCarousel2 v2.3.4/dist/owl.carousel.min.js"></script>
     <script src="lib/Animate On Scroll v2.3.2/dist/aos.js"></script>
     <script src="lib/typed.js v2.1.0/src/typed.js"></script>
-    <script src="js/main.js"></script>
+    <script src="lib/Fancybox v5.0.36/dist/fancybox.umd.js"></script>
+    <script src="js/index.js"></script>
 </body>
+</html>
+
 </html>

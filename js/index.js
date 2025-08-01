@@ -2044,4 +2044,144 @@ gsap.to('body', {
   setTimeout(() => {
     initializeAnimatedSections();
   }, 2000);
+  
+  // Initialize AOS (Animate On Scroll)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      offset: 100
+    });
+  }
 });
+
+// Explore Features Function
+function exploreFeatures() {
+  // Create a fancy modal to showcase features
+  if (typeof Fancybox !== 'undefined') {
+    Fancybox.show([
+      {
+        src: `
+          <div class="feature-modal">
+            <h2>🚀 Explore BlogNimeHack Features</h2>
+            <div class="feature-grid">
+              <div class="modal-feature">
+                <i class='bx bx-palette'></i>
+                <h3>Anime Theme</h3>
+                <p>Beautiful anime-inspired design with customizable themes</p>
+              </div>
+              <div class="modal-feature">
+                <i class='bx bx-shield-check'></i>
+                <h3>Security First</h3>
+                <p>Advanced security features to protect your data</p>
+              </div>
+              <div class="modal-feature">
+                <i class='bx bx-mobile-alt'></i>
+                <h3>Mobile Optimized</h3>
+                <p>Perfect experience on all devices</p>
+              </div>
+              <div class="modal-feature">
+                <i class='bx bx-world'></i>
+                <h3>Global Community</h3>
+                <p>Connect with developers worldwide</p>
+              </div>
+            </div>
+            <div class="modal-cta">
+              <button onclick="Fancybox.close()" class="close-btn">Close</button>
+              <button onclick="window.location.href='#about'" class="learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        `,
+        type: 'html'
+      }
+    ], {
+      on: {
+        done: () => {
+          // Add styles for the modal content
+          const style = document.createElement('style');
+          style.textContent = `
+            .feature-modal {
+              background: linear-gradient(135deg, #1a1e23, #2a2e33);
+              color: #ffe0e0;
+              padding: 2rem;
+              border-radius: 20px;
+              max-width: 600px;
+              text-align: center;
+            }
+            .feature-modal h2 {
+              color: #ff0a54;
+              margin-bottom: 2rem;
+              font-size: 2rem;
+            }
+            .feature-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1.5rem;
+              margin-bottom: 2rem;
+            }
+            .modal-feature {
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              border-radius: 12px;
+              padding: 1.5rem;
+              transition: all 0.3s ease;
+            }
+            .modal-feature:hover {
+              transform: translateY(-5px);
+              border-color: #ff0a54;
+            }
+            .modal-feature i {
+              font-size: 2rem;
+              color: #ff0a54;
+              margin-bottom: 1rem;
+              display: block;
+            }
+            .modal-feature h3 {
+              color: #ffe0e0;
+              margin-bottom: 0.5rem;
+            }
+            .modal-feature p {
+              color: #c5babf;
+              font-size: 0.9rem;
+            }
+            .modal-cta {
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+            }
+            .close-btn, .learn-more-btn {
+              padding: 0.75rem 1.5rem;
+              border: none;
+              border-radius: 25px;
+              font-weight: 600;
+              cursor: pointer;
+              transition: all 0.3s ease;
+            }
+            .close-btn {
+              background: rgba(255, 255, 255, 0.1);
+              color: #ffe0e0;
+            }
+            .learn-more-btn {
+              background: linear-gradient(135deg, #ff0a54, #d11046);
+              color: white;
+            }
+            .close-btn:hover, .learn-more-btn:hover {
+              transform: translateY(-2px);
+            }
+            @media (max-width: 768px) {
+              .feature-grid {
+                grid-template-columns: 1fr;
+              }
+            }
+          `;
+          document.head.appendChild(style);
+        }
+      }
+    });
+  } else {
+    // Fallback if Fancybox is not available
+    alert('🚀 Welcome to BlogNimeHack! Explore our amazing features including anime stickers, anonymous profiles, color-coded categories, and fun error pages!');
+  }
+}

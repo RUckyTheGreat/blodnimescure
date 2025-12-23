@@ -1,1 +1,1 @@
-![Project Preview](Animation5.gif)
+![Preview](Animation5.gif)
